@@ -192,7 +192,7 @@ nav a:hover {
     margin-bottom: 24px;
 }
 
-.product-grid div {
+.product-grid a {
     background: #202020;
     padding: 16px;
     border-radius: 10px;
@@ -457,7 +457,7 @@ nav a:hover {
     background: var(--mcz-grafite);
 }
 
-.product-grid div {
+.product-grid a {
     background: #30333a;
     border-color: #3d4148;
 }
@@ -514,7 +514,7 @@ nav a:hover {
     color: var(--mcz-vermelho);
 }
 
-.product-grid div:hover {
+.product-grid a:hover {
     border-color: var(--mcz-vermelho);
 }
 
@@ -642,4 +642,10 @@ nav a:hover::after {
         max-width: 340px !important;
         padding: 16px 18px !important;
     }
+}
+
+.product-grid a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
 }
