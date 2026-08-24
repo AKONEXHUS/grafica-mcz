@@ -693,3 +693,60 @@ nav a:hover::after {
         border-bottom: 1px solid #eeeeee;
     }
 }
+
+/* =========================
+   MCZ EM AÇÃO
+========================= */
+
+.mcz-em-acao {
+    padding: 80px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.mcz-em-acao h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.acao-intro {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.6;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.videos-grid video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 18px;
+    background: #000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .mcz-em-acao {
+        padding: 60px 15px;
+    }
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
