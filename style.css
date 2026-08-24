@@ -649,3 +649,47 @@ nav a:hover::after {
     color: #ffffff;
     text-decoration: none;
 }
+
+/* MENU MOBILE */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 28px;
+    cursor: pointer;
+    color: #202124;
+}
+
+@media (max-width: 850px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .nav nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee;
+        box-shadow: 0 8px 20px rgba(0,0,0,.08);
+        padding: 10px 20px 16px;
+        z-index: 999;
+    }
+
+    .nav nav.menu-open {
+        display: flex;
+    }
+
+    .nav nav a {
+        padding: 12px 0;
+        border-bottom: 1px solid #eeeeee;
+    }
+}
