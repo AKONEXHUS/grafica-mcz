@@ -750,3 +750,40 @@ nav a:hover::after {
     }
 }
 
+
+/* Ajuste do botão de orçamento no mobile */
+@media (max-width: 600px) {
+    .btn-header {
+        padding: 8px 10px;
+        font-size: 12px;
+        border-radius: 8px;
+        white-space: nowrap;
+    }
+}
+
+
+/* PADRÃO DAS IMAGENS DOS SERVIÇOS */
+.service-card {
+    overflow: hidden;
+}
+
+.service-card > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card-content {
+    padding: 24px;
+}
+
+@media (max-width: 768px) {
+    .service-card > img {
+        height: 190px;
+    }
+
+    .service-card-content {
+        padding: 20px;
+    }
+}
