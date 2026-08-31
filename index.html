@@ -23,17 +23,12 @@
 
 <!-- Google Ads - Conversão Solicitar Cotação -->
 <script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-    'send_to': 'AW-473879413/bWPPCLScr-scEPWm--EB',
-    'event_callback': callback
-  });
-  return false;
+function gtag_report_conversion() {
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-473879413/bWPPCLScr-scEPWm--EB'
+    });
+  }
 }
 </script>
 
@@ -115,12 +110,12 @@ function gtag_report_conversion(url) {
                     </div>
 
                     <div class="product-grid">
-                        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Cartoes." target="_blank">Cartões</a>
-                        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Adesivos." target="_blank">Adesivos</a>
-                        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Banners." target="_blank">Banners</a>
-                        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Agendas." target="_blank">Agendas</a>
-                        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Fachadas." target="_blank">Fachadas</a>
-                        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Taloes." target="_blank">Talões</a>
+                        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Cartoes." target="_blank">Cartões</a>
+                        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Adesivos." target="_blank">Adesivos</a>
+                        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Banners." target="_blank">Banners</a>
+                        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Agendas." target="_blank">Agendas</a>
+                        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Fachadas." target="_blank">Fachadas</a>
+                        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Taloes." target="_blank">Talões</a>
                     </div>
 
                     <p>
@@ -152,7 +147,7 @@ function gtag_report_conversion(url) {
     <div class="service-card-content">
         <h3>Cartões de Visita</h3>
         <p>Cartões profissionais personalizados para apresentar sua empresa com qualidade.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Cartoes%20de%20Visita." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Cartoes%20de%20Visita." class="service-btn" target="_blank">Pedir orçamento</a>
     </div>
 </article>
 
@@ -161,7 +156,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Adesivos</h3>
         <p>Adesivos em vinil, com ou sem recorte eletrônico, para produtos, vitrines e divulgação.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Adesivos." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Adesivos." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -170,7 +165,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Banners e Faixas</h3>
         <p>Materiais para divulgação de empresas, promoções, eventos e comunicação visual.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Banners%20e%20Faixas." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Banners%20e%20Faixas." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -179,7 +174,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Fachadas</h3>
         <p>Projetos e produção de fachadas para destacar e valorizar a identidade da sua empresa.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Fachadas." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Fachadas." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -188,7 +183,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Agendas Personalizadas</h3>
         <p>Agendas personalizadas para empresas, brindes corporativos e uso profissional.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Agendas%20Personalizadas." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Agendas%20Personalizadas." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -197,7 +192,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Talões de Pedido</h3>
         <p>Talões personalizados em preto e branco ou coloridos, produzidos conforme sua necessidade.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Talões%20de%20Pedido." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Talões%20de%20Pedido." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -206,7 +201,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Pastas Personalizadas</h3>
         <p>Pastas com orelha, bolso e acabamento profissional para documentos e apresentações.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Pastas%20Personalizadas." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Pastas%20Personalizadas." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -215,7 +210,7 @@ function gtag_report_conversion(url) {
         <div class="service-card-content">
         <h3>Impressos em Geral</h3>
         <p>Panfletos, folders, papel timbrado, calendários e diversos materiais gráficos.</p>
-        <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Impressos%20em%20Geral." class="service-btn" target="_blank">Pedir orçamento</a>
+        <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854?text=Ola%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orcamento%20para%20Impressos%20em%20Geral." class="service-btn" target="_blank">Pedir orçamento</a>
         </div>
     </article>
 
@@ -323,7 +318,7 @@ function gtag_report_conversion(url) {
                     Entre em contato e solicite seu orçamento.
                 </p>
 
-                <a onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5582988374854" class="btn-whatsapp" target="_blank">
+                <a onclick="gtag_report_conversion();" href="https://wa.me/5582988374854" class="btn-whatsapp" target="_blank">
                     Solicitar orçamento pelo WhatsApp
                 </a>
 
